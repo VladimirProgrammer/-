@@ -6,6 +6,10 @@
     color: #001D45;
     
 }
+
+
+
+
 .hamburger__container,
 .navbar{
     display: none;
@@ -134,11 +138,11 @@ h6{
 }
 
 .bottom__img{
+    max-width: 100%;
     cursor: pointer;
 }
-.header__menu a:hover{
-    color: #D2D2D2;
-}
+
+
 .header__search{
     display: flex;
     justify-content: space-between;
@@ -189,8 +193,9 @@ h6{
 .intro__bottom a{
     text-decoration: none;
     border-bottom: 2px solid #D2D2D2;
-    ;
+
 }
+
 .service__content h2{
     color:#D2D2D2;
     margin-bottom: 60px;
@@ -218,6 +223,7 @@ h6{
 }
 .service__content .arrow{
     transform: rotate(90deg);
+    max-width: 100%;
 }
 
 .benefits{
@@ -429,6 +435,10 @@ h6{
   }
 
 @media (max-width: 785px){
+    .container{
+        max-width: 100%;
+    }
+
   
     .header__search, .header__menu{
         display: none;   
@@ -462,8 +472,8 @@ h6{
     }
     
     
-    .header__menu li a {
-        color: #d3e3e3;
+    .header__menu li a{
+        color: #D2D2D2;
         text-decoration: none;
         font-family: 'Raleway', sans-serif;
         font-size: 1.6em;
@@ -581,6 +591,9 @@ h6{
     .intro{
         margin-bottom: 120px;
     }
+    .service__content h2{
+        max-width: 100%;
+    }
     .service .padding{
         padding-left: 8px;
         padding-right: 8px;
@@ -628,8 +641,6 @@ h6{
 
     }
     .offer .padding{
-        padding-top: 30px;
-        padding-bottom: 48px;
         padding: 30px 47px 50px 47px;
     }
     .offer__content h2{
@@ -687,7 +698,7 @@ h6{
         margin-bottom: 120px;
     }
 
-    .widgets .padding{
+   .widgets .padding{
         padding-left: 8px;
         padding-right: 8px;
 
@@ -767,6 +778,7 @@ h6{
     .footer__content a{
         font-size: 18px; 
     } 
+    
 }
 
 @media (max-width: 375px){
@@ -780,5 +792,9 @@ h6{
     
     p{
         font-size: 14px;
-    }   
+    } 
+    .container{
+        margin: 0 auto;
+        max-width: 100%;
+    }  
 }
