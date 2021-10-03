@@ -221,9 +221,12 @@ h6{
     margin-right: 24px;
 
 }
+.service__box {
+    overflow: hidden;
+}
 .service__content .arrow{
     transform: rotate(90deg);
-    max-width: 100%;
+    
 }
 
 .benefits{
