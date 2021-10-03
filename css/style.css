@@ -30,6 +30,7 @@ button {
     font-style: normal;
     font-weight: 600;
     font-size: 16px;
+    cursor: pointer;
 }
 
 h1{
@@ -106,7 +107,7 @@ h6{
     max-width: 1080px;
     margin: 0 auto;
 }
-.header__padding{
+.header .padding{
     padding-top: 12px;
     padding-bottom: 12px;
 }
@@ -122,11 +123,27 @@ h6{
     justify-content: space-between;
     width: 394px;
     list-style-type: none;
+    
+}
+.header__menu a{
+    text-decoration: none;
+
+}
+.button:hover{
+    color: #D2D2D2;
+}
+
+.bottom__img{
+    cursor: pointer;
+}
+.header__menu a:hover{
+    color: #D2D2D2;
 }
 .header__search{
     display: flex;
     justify-content: space-between;
     width: 259px;
+    cursor: pointer;
 }
 .intro{
     margin-bottom: 150px;
@@ -162,6 +179,7 @@ h6{
     align-items: center;
     justify-content: space-between;
     width: 85px;
+    cursor: pointer;
 }
 .intro__bottom {
     display: flex;
@@ -189,6 +207,7 @@ h6{
     justify-content: space-between;
     border-radius: 8px;
     margin-bottom: 16px;
+    cursor: pointer;
 }
 .service__inner{
     display: flex;
@@ -250,7 +269,7 @@ h6{
     background: #FFFFFF;
     border-radius: 8px;
 }
-.offer__padding{
+.offer .padding{
     padding-top: 60px;
     padding-bottom: 66px;
 }
@@ -275,8 +294,10 @@ h6{
 
 .offer__content .download{
     margin: 0 auto;
+    cursor: pointer;
     
 }
+
 .bottom__img{
     margin-left: 104px;
     margin-top: -51px;
@@ -302,6 +323,7 @@ h6{
     background: #FFFFFF;
     padding: 33px 43px;
     border-radius: 8px;
+    cursor: pointer;
 
 }
 .manual__inner h5{
@@ -366,7 +388,7 @@ h6{
     background: #001D45;
     height: 498px;
 }
-.footer__padding{
+.footer .padding{
     padding-top: 60px;
 }
 .footer__content{
@@ -523,7 +545,7 @@ h6{
 
 
 
-    .intro__padding{
+    .intro .padding{
         padding-left: 8px;
         padding-right: 8px;
     }
@@ -559,10 +581,14 @@ h6{
     .intro{
         margin-bottom: 120px;
     }
-    .service__padding{
+    .service .padding{
         padding-left: 8px;
         padding-right: 8px;
 
+    }
+
+    .service__box{
+        padding: 25.5px 16px;
     }
     .service__content h2{
         padding-left: 16px;
@@ -572,7 +598,7 @@ h6{
         margin-bottom: 120px;
     }
 
-    .benefits__padding{
+    .benefits .padding{
         padding-left: 8px;
         padding-right: 8px;
 
@@ -589,6 +615,8 @@ h6{
         margin-bottom: 20px;
         width: 100%;
     }
+
+
     .benefits__inner:last-child{
         display: none;
     }
@@ -599,7 +627,7 @@ h6{
         margin-bottom: 120px;
 
     }
-    .offer__padding{
+    .offer .padding{
         padding-top: 30px;
         padding-bottom: 48px;
         padding: 30px 47px 50px 47px;
@@ -621,7 +649,7 @@ h6{
 
 
 
-    .manual__padding{
+    .manual .padding{
         padding-left: 8px;
         padding-right: 8px;
 
@@ -640,6 +668,7 @@ h6{
     .manual__inner{
         margin-bottom: 20px;
         width: 100%;
+        cursor: pointer;
     }
     .manual__inner:last-child {
         display: none;
@@ -658,7 +687,7 @@ h6{
         margin-bottom: 120px;
     }
 
-    .widgets__padding{
+    .widgets .padding{
         padding-left: 8px;
         padding-right: 8px;
 
@@ -671,7 +700,7 @@ h6{
         margin-bottom: 120px;
     }
 
-    .updates__padding{
+    .updates .padding{
         padding-left: 8px;
         padding-right: 8px;
 
@@ -690,7 +719,7 @@ h6{
     .updates{
         margin-bottom: 120px;
     }
-    .footer__padding{
+    .footer .padding{
         padding-top: 40px;
         padding-left: 24px;
     }
@@ -714,9 +743,30 @@ h6{
     .footer__content h4{
         margin-bottom: 4px;
     }
-    
-    
 
+    .benefits__inner h1{
+        font-size: 44px;
+    }
+    .benefits__inner h4{
+        font-size: 20px;
+
+    }
+
+    .benefits__inner h5, 
+    .manual__inner h5{
+        font-size: 16px;
+
+    }
+
+    .updates__box h4{
+        font-size: 16px;
+    }
+    .updates__box h5{
+        font-size: 14px;
+    }
+    .footer__content a{
+        font-size: 18px; 
+    } 
 }
 
 @media (max-width: 375px){
@@ -730,6 +780,5 @@ h6{
     
     p{
         font-size: 14px;
-    }
-
+    }   
 }
