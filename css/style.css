@@ -4,11 +4,7 @@
     padding: 0;
     box-sizing: border-box;
     color: #001D45;
-    
 }
-
-
-
 
 .hamburger__container,
 .navbar{
@@ -21,7 +17,6 @@ ul li{
     font-family: 'Open Sans', 'Roboto', sans-serif;
     font-size: 16px;
     font-weight: 600;
-
 }
 
 button {
@@ -56,7 +51,6 @@ h4{
     font-size: 20px;
     font-family: 'PT Serif', serif;
     font-weight: 700;
-
 }
 p {
     font-size: 18px;
@@ -73,29 +67,7 @@ h6{
     font-family: 'Open Sans', 'Roboto', sans-serif;
     font-weight: 400;
     color: #D2D2D2;
-
-
 }
-/*:root {
-    --backgroundActive: rgb(42, 16, 192);
-    --hoverBackground: rgb(210, 210, 211);
-    --background: white;
-    --backgrounBlock: white;
-    --mainBackground: rgb(42, 16, 192);
-    --borderColor: rgb(42, 16, 192);
-    --totalButtonActive: rgb(73, 47, 223);
-    --borderColor2: grey;
-    --backgroundWhite: white;
-    --colorFooterHeader: white;
-    --colorText: grey;
-    --colorTextActive: white;
-    --colorTextMain: black;
-    --boxshadow: -2px -1px 43px 6px rgba(0,0,0,0.09);
-
-
-    font-family: 'PT Serif', serif;
-    font-family: 'Open Sans', 'Roboto', sans-serif;
-}*/
 
 .header{
     min-height: 70px;
@@ -141,7 +113,6 @@ h6{
     max-width: 100%;
     cursor: pointer;
 }
-
 
 .header__search{
     display: flex;
@@ -204,12 +175,12 @@ h6{
     margin-bottom: 150px;
 }
 
-
 .service__box {
     display: flex;
     padding: 20px 40px;
     background-color:#FFFFFF;
     justify-content: space-between;
+    align-items: center;
     border-radius: 8px;
     margin-bottom: 16px;
     cursor: pointer;
@@ -316,7 +287,10 @@ h6{
 .manual{
     margin-bottom: 150px;
 }
-
+.manual__text{
+    margin-right: 24px;
+    margin-left: 24px;
+}
 .manual__content h2{
     color:#D2D2D2;
     margin-bottom: 60px;
@@ -365,6 +339,110 @@ h6{
     height: 356px;
     background-color: #FFFFFF;
 }
+
+/*slider*/
+.widgets__wrapper {
+    
+padding-left: 60px;
+padding-right: 60px;
+margin: 0 auto;
+margin-top: 50px; }
+
+.slider__container {
+overflow: hidden;
+}
+
+.slider__track {
+display: flex;
+transition: .2s;
+transition: .2s; }
+
+.slider__item {
+
+background-color: #FFFFFF;
+border-radius: 8px;
+margin-left: 20px;
+margin-right: 20px; 
+}
+
+.slider__item p{
+    padding: 16px;
+}
+.sliderslider__inner{
+    background-color:#1A1C31;
+    
+
+}
+.slider__buttons {
+margin-top: 40px;
+text-align: center; 
+display: flex;
+justify-content: center;
+}
+.slider__buttons div{
+    margin: 20px;
+}
+iframe {
+width: 100% !important;
+height: auto !important;
+}
+
+.btn{
+transform: rotate(225deg);
+width: 13px;
+height: 13px;
+border-bottom: 3px solid #001D45;
+border-left: 3px solid #001D45;
+cursor: pointer;
+user-select: none;
+}
+.btn__down{
+transform: rotate(315deg);
+width: 13px;
+height: 13px;
+border-bottom: 3px solid #001D45;
+border-left: 3px solid #001D45;
+cursor: pointer;
+user-select: none;
+}
+
+
+.btn__prev{
+transform: rotate(45deg);
+width: 15px;
+height: 15px;
+border-bottom: 3px solid #D2D2D2;
+border-left: 3px solid #D2D2D2;
+cursor: pointer;
+user-select: none;
+    
+}
+
+.btn__next{
+transform: rotate(225deg);
+width: 15px;
+height: 15px;
+border-bottom: 3px solid #D2D2D2;
+border-left: 3px solid #D2D2D2;
+cursor: pointer;
+user-select: none;
+
+}
+
+.btn__prev:hover{
+    border-bottom: 3px solid #001D45;
+    border-left: 3px solid #001D45;
+}
+.btn__next:hover{
+    border-bottom: 3px solid #001D45;
+    border-left: 3px solid #001D45;
+}
+.slider__item:last-of-type{
+    visibility: hidden;
+}
+
+  /*Slider end*/
+  
 .updates{
     margin-bottom: 150px;
 }
@@ -552,12 +630,6 @@ h6{
         animation: fade .5s;
     }
 
-
-
-
-
-
-
     .intro .padding{
         padding-left: 8px;
         padding-right: 8px;
@@ -637,6 +709,8 @@ h6{
         display: none;
     }
 
+
+
     .offer {
         padding-left: 8px;
         padding-right: 8px;
@@ -714,6 +788,12 @@ h6{
         margin-bottom: 120px;
     }
 
+    .widgets__wrapper {
+    
+        padding-left: 8px;
+        padding-right: 8px;
+        margin: 0 auto;
+        margin-top: 50px; }
     .updates .padding{
         padding-left: 8px;
         padding-right: 8px;
