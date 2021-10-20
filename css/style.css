@@ -205,25 +205,20 @@ h6{
 }
 
 .benefits__box{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 40px;
+    grid-column-gap: 40px;
 }
 .benefits__inner{
-    width: 333px;
     height: 286px;
     padding: 30px 40px;
     background: #FFFFFF;
     border-radius: 8px;
-    margin-bottom: 40px;
+    
 }
-/*для заглушки*/
-.benefits__inner:last-child{
-    visibility: hidden;
-}
-.manual__inner:last-child{
-    visibility: hidden;
-}
+
+
 
 
 .benefits__content h2{
@@ -297,8 +292,10 @@ h6{
 }
 .manual__box{
     margin-bottom: 60px;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 40px;
+    grid-column-gap: 40px;
 }
 .manual__inner{
     width: 333px;
@@ -518,6 +515,10 @@ user-select: none;
 @media (max-width: 785px){
     .container{
         max-width: 100%;
+    }
+    .benefits__box,
+    .manual__box{
+        grid-template-columns: 1fr;
     }
 
   
