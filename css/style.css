@@ -706,9 +706,6 @@ user-select: none;
     }
 
 
-    .benefits__inner:last-child{
-        display: none;
-    }
 
 
 
@@ -750,18 +747,13 @@ user-select: none;
     .manual{
         margin-bottom: 120px;
     }
-    .manual__box{
-        flex-wrap: wrap;
-        margin-bottom: 20px;
-    }
+
     .manual__inner{
         margin-bottom: 20px;
         width: 100%;
         cursor: pointer;
     }
-    .manual__inner:last-child {
-        display: none;
-    }
+
     .manual__inner h6{
         margin-bottom: 48px;
     }
